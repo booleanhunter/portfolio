@@ -10,8 +10,8 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(3),
-			__webpack_require__(4)
+			__webpack_require__(4),
+			__webpack_require__(5)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, HomePage){	
 			console.log('Loaded the Home Page');
 			React.render(React.createElement(HomePage, null), document.getElementById('componentContainer'));
@@ -23,17 +23,19 @@ webpackJsonp([1],[
 /***/ },
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//This willhave all the other components under it. The main parent
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(3),
+			__webpack_require__(4),
 			__webpack_require__(2),
-			__webpack_require__(5),
-			__webpack_require__(6)
-		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, HeaderBar, content){
+			__webpack_require__(6),
+			__webpack_require__(7),
+			__webpack_require__(3)
+		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, HeaderBar, content, ScrollMagic){
 			var HomePage = React.createClass({displayName: "HomePage",
 				getInitialState: function(){
 					return {
@@ -42,12 +44,26 @@ webpackJsonp([1],[
 				},
 				componentDidMount:function(){
 					console.log('triggered once after initial render');
+					// var controller = new ScrollMagic.Controller();
+					// var scene = new ScrollMagic.Scene({triggerElement: "#header-bar"})
+					// 	.setPin("#header-bar")
+					// 	.addTo(controller);
 				},
 			  	render:function(){
 			  		var that = this;
 				    return (
 				    	React.createElement("div", {id: "homePage"}, 
 				    		React.createElement(HeaderBar, null), 
+				    		React.createElement("div", {id: "trigger"}), 
+				    		/*
+				    				    	<div id="header-bar">
+				    				    		<ul className="header-tabs button-style-one">
+				    				    			<li>Intro</li>
+				    				    			<li>Tech</li>
+				    				    			<li>Work</li>
+				    				    			<li>Contact</li>
+				    				    		</ul>
+				    		 		    	</div>*/
 				    		React.createElement("div", {id: "pageOne", className: "content"}, 
 				    			React.createElement("br", null), " ", React.createElement("br", null), 
 				    			React.createElement("img", {src: "public/images/ashwin.jpg", className: "profilePic"}), 
@@ -70,15 +86,16 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(3),
-			__webpack_require__(2)
-		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $){
+			__webpack_require__(4),
+			__webpack_require__(2),
+			__webpack_require__(3)
+		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, ScrollMagic){
 			var HeaderBar = React.createClass({displayName: "HeaderBar",
 				getInitialState: function(){
 					return {
@@ -87,6 +104,10 @@ webpackJsonp([1],[
 				},
 				componentDidMount:function(){
 					console.log('triggered once after initial render');
+					var controller = new ScrollMagic.Controller();
+					var scene = new ScrollMagic.Scene()
+						.setPin("#header-bar")
+						.addTo(controller);
 				},
 			  	render:function(){
 			  		var that = this;
@@ -108,7 +129,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
