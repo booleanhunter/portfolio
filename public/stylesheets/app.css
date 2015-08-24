@@ -15,6 +15,7 @@ ul.header-tabs li {
 }
 .button-style-one li{
 	min-width: 50px;
+	width: 100%;
 	margin-left: 10px;
 	padding: .3em .8em;
 	border: 1px solid #446d88;
