@@ -1,34 +1,75 @@
-#header-bar {
-	background-color: #F1F0FF; 
-	color: #443266; 
-	height: 50px;
-}
-
-ul.header-tabs  { list-style-type: none; }
-
-ul.header-tabs li { 
-	display: inline; 
-	position:relative; 
-	top:-5px;
-	height: 100%;
-	
-}
-.button-style-one li{
-	min-width: 50px;
-	width: 100%;
-	margin-left: 10px;
-	padding: .3em .8em;
-	border: 1px solid #446d88;
-	background: #58a linear-gradient(hsla(0,0%,100%,.2),transparent);
-	border-radius: .2em;
-	box-shadow: 0 .05em .25em gray;
-	color: white;
-	text-shadow: 0 -.05em .05em #335166;
-	font-size: 170%;
-	line-height: 1.2;
-}
 body {
 	background-color: #C3C3E5;
+}
+
+/* CSS for header*/
+.header {
+	background-color: #F1F0FF; 
+	color: #443266; 
+	position: absolute;
+	height: 10%;
+	width:97%;
+	font-size: 1.2em;
+	margin: 1.2em 5em 1.5em 1em;
+}
+
+.buttonClassOne:first-child {
+	float: left;
+	width: 16%;
+	margin-left: 4%;
+	margin-right: 4%
+}
+
+.buttonClassOne:nth-child(2) {
+	float: left;
+	width: 16%;
+	margin-left: 4%;
+	margin-right: 4%
+}
+.buttonClassOne:nth-child(3) {
+	float: left;
+	width: 16%;
+	margin-left: 4%;
+	margin-right: 4%
+}
+.buttonClassOne:nth-child(4) {
+	float: left;
+	width: 16%;
+	margin-left: 4%;
+	margin-right: 4%
+}
+
+
+/* End of CSS for header*/
+
+
+/*Apply class inputClassOne to apply this style for div buttons*/
+.buttonClassOne {
+	text-align: center;
+	color: rgb(231,95,93);
+	background-color: rgba(255,255,255,0.2);
+  	width: 100px;
+	height: 25px;
+	border-radius: 4px;
+	padding-top:5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,54,76,0.5);
+	cursor: pointer; 
+	cursor: hand;
+	transition: all 0.5s ease-in-out 0.1s;
+}
+
+.buttonClassOne:hover {
+	background-color: rgba(231,95,93,0.5) ;
+	color: white;
+	border-color: white
+}
+/*End of styles for buttonClassOne*/
+
+#homePage {
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .content {

@@ -10,7 +10,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(3),
+			__webpack_require__(4),
 			__webpack_require__(5)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, HomePage){	
 			console.log('Loaded the Home Page');
@@ -30,12 +30,12 @@ webpackJsonp([1],[
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//This willhave all the other components under it. The main parent
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(3),
+			__webpack_require__(4),
 			__webpack_require__(2),
 			__webpack_require__(6),
 			__webpack_require__(7),
 			__webpack_require__(8),
-			__webpack_require__(4)
+			__webpack_require__(3)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, HeaderBar, TimelineWidget, content, ScrollMagic){
 			var HomePage = React.createClass({displayName: "HomePage",
 				getInitialState: function(){
@@ -55,16 +55,6 @@ webpackJsonp([1],[
 				    return (
 				    	React.createElement("div", {id: "homePage"}, 
 				    		React.createElement(HeaderBar, null), 
-				    		React.createElement("div", {id: "trigger"}), 
-				    		/*
-				    				    	<div id="header-bar">
-				    				    		<ul className="header-tabs button-style-one">
-				    				    			<li>Intro</li>
-				    				    			<li>Tech</li>
-				    				    			<li>Work</li>
-				    				    			<li>Contact</li>
-				    				    		</ul>
-				    		 		    	</div>*/
 				    		React.createElement("div", {id: "pageOne", className: "content"}, 
 				    			React.createElement("br", null), " ", React.createElement("br", null), 
 				    			React.createElement("img", {src: "public/images/ashwin.jpg", className: "profilePic"}), 
@@ -94,9 +84,9 @@ webpackJsonp([1],[
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(3),
+			__webpack_require__(4),
 			__webpack_require__(2),
-			__webpack_require__(4)
+			__webpack_require__(3)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, ScrollMagic){
 			var HeaderBar = React.createClass({displayName: "HeaderBar",
 				getInitialState: function(){
@@ -106,10 +96,6 @@ webpackJsonp([1],[
 				},
 				componentDidMount:function(){
 					console.log('triggered once after initial render');
-					var controller = new ScrollMagic.Controller();
-					var sceneOne = new ScrollMagic.Scene()
-						.setPin("#header-bar")
-						.addTo(controller);	
 				},
 				scrollToOne: function(){
 					$('body').animate({
@@ -129,12 +115,12 @@ webpackJsonp([1],[
 			  	render:function(){
 			  		var that = this;
 				    return (
-				    	React.createElement("div", {id: "header-bar"}, 
-				    		React.createElement("ul", {className: "header-tabs button-style-one"}, 
-				    			/*<li onClick={this.scrollToOne}>Intro</li>
-				    			<li onClick={this.scrollToTwo}>Tech</li>
-				    			<li onClick={this.scrollToThree}>Work</li>*/
-				    			React.createElement("li", null, "Contact")
+				    	React.createElement("div", {id: "header-bar", className: "header"}, 
+				    		React.createElement("div", {className: "header-tabs"}, 
+				    			React.createElement("div", {className: "buttonClassOne", onClick: this.scrollToOne}, "Intro"), 
+				    			React.createElement("div", {className: "buttonClassOne", onClick: this.scrollToTwo}, "Tech"), 
+				    			React.createElement("div", {className: "buttonClassOne", onClick: this.scrollToThree}, "Work"), 
+				    			React.createElement("div", {className: "buttonClassOne"}, "Contact")
 				    		)
 		 		    	)
 				    );
@@ -155,7 +141,7 @@ webpackJsonp([1],[
 	 * @Details Renders the view for the timeline-widget and operations using the timeline feature and calendar
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	        __webpack_require__(3),
+	        __webpack_require__(4),
 	        __webpack_require__(2),
 	    ], __WEBPACK_AMD_DEFINE_RESULT__ = function(React,$){
 	    	var TimelineWidget = React.createClass({displayName: "TimelineWidget",
