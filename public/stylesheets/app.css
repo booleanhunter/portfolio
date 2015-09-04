@@ -6,40 +6,18 @@ body {
 .header {
 	background-color: #F1F0FF; 
 	color: #443266; 
-	position: absolute;
-	height: 10%;
-	width:97%;
-	font-size: 1.2em;
-	margin: 1.2em 5em 1.5em 1em;
+	position: fixed;
+	min-height: 10px;
+	width:99%;
+	margin: -0.5em 0.1em 1.5em 0.1em;
+	z-index: 2
 }
 
-.buttonClassOne:first-child {
+.buttonClassOne {
+	margin: 0.2em 4% 0.1em 4%;
 	float: left;
 	width: 16%;
-	margin-left: 4%;
-	margin-right: 4%
 }
-
-.buttonClassOne:nth-child(2) {
-	float: left;
-	width: 16%;
-	margin-left: 4%;
-	margin-right: 4%
-}
-.buttonClassOne:nth-child(3) {
-	float: left;
-	width: 16%;
-	margin-left: 4%;
-	margin-right: 4%
-}
-.buttonClassOne:nth-child(4) {
-	float: left;
-	width: 16%;
-	margin-left: 4%;
-	margin-right: 4%
-}
-
-
 /* End of CSS for header*/
 
 
@@ -48,15 +26,16 @@ body {
 	text-align: center;
 	color: rgb(231,95,93);
 	background-color: rgba(255,255,255,0.2);
-  	width: 100px;
-	height: 25px;
+	font-size: 2.5vw;
+  	/*width: 100px;*/
 	border-radius: 4px;
-	padding-top:5px;
+	padding-top: 5px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgba(0,54,76,0.5);
 	cursor: pointer; 
 	cursor: hand;
+	
 	transition: all 0.5s ease-in-out 0.1s;
 }
 
@@ -73,7 +52,9 @@ body {
 }
 
 .content {
-	white-space: pre-line
+	white-space: pre-line;
+	position: absolute;
+	margin-top: 5%;
 }
 
 .profilePic {

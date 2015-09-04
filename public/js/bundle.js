@@ -55,19 +55,21 @@ webpackJsonp([1],[
 				    return (
 				    	React.createElement("div", {id: "homePage"}, 
 				    		React.createElement(HeaderBar, null), 
-				    		React.createElement("div", {id: "pageOne", className: "content"}, 
-				    			React.createElement("br", null), " ", React.createElement("br", null), 
-				    			React.createElement("img", {src: "public/images/ashwin.jpg", className: "profilePic"}), 
-				    			content.firstPageParaOne, 
-				    			content.firstPageParaTwo
-		 		    		), 
-		 		    		
-		 		    		React.createElement("div", {id: "pageTwo"}, 
-		 		    			React.createElement(TimelineWidget, null)
-		 		    		), 
+				    		React.createElement("div", {className: "content"}, 
+					    		React.createElement("div", {id: "pageOne"}, 
+					    			React.createElement("br", null), " ", React.createElement("br", null), 
+					    			React.createElement("img", {src: "public/images/ashwin.jpg", className: "profilePic"}), 
+					    			content.firstPageParaOne, 
+					    			content.firstPageParaTwo
+			 		    		), 
+			 		    		
+			 		    		React.createElement("div", {id: "pageTwo"}, 
+			 		    			React.createElement(TimelineWidget, null)
+			 		    		), 
 
-		 		    		React.createElement("div", {id: "pageThree"}
-		 		    		)
+			 		    		React.createElement("div", {id: "pageThree"}
+			 		    		)
+			 		    	)	
 		 		    	)
 				    );
 			  	}
