@@ -10,7 +10,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(4),
+			__webpack_require__(3),
 			__webpack_require__(5)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, HomePage){	
 			console.log('Loaded the Home Page');
@@ -30,12 +30,12 @@ webpackJsonp([1],[
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//This willhave all the other components under it. The main parent
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(4),
+			__webpack_require__(3),
 			__webpack_require__(2),
 			__webpack_require__(6),
 			__webpack_require__(7),
 			__webpack_require__(8),
-			__webpack_require__(3)
+			__webpack_require__(4)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, HeaderBar, TimelineWidget, content, ScrollMagic){
 			var HomePage = React.createClass({displayName: "HomePage",
 				getInitialState: function(){
@@ -56,11 +56,14 @@ webpackJsonp([1],[
 				    	React.createElement("div", {id: "homePage"}, 
 				    		React.createElement(HeaderBar, null), 
 				    		React.createElement("div", {className: "content"}, 
-					    		React.createElement("div", {id: "pageOne"}, 
-					    			React.createElement("br", null), " ", React.createElement("br", null), 
-					    			React.createElement("img", {src: "public/images/ashwin.jpg", className: "profilePic"}), 
-					    			content.firstPageParaOne, 
-					    			content.firstPageParaTwo
+					    		React.createElement("div", {id: "pageOne", className: "section group"}, 
+					    			React.createElement("div", {className: "column"}, 
+					    				React.createElement("img", {src: "public/images/ashwin.jpg", className: "profilePic"})
+					    			), 	
+					    			React.createElement("div", {className: "column contentOne"}, 
+					    				content.firstPageParaOne, 
+					    				content.firstPageParaTwo
+					    			)			
 			 		    		), 
 			 		    		
 			 		    		React.createElement("div", {id: "pageTwo"}, 
@@ -86,9 +89,9 @@ webpackJsonp([1],[
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-			__webpack_require__(4),
+			__webpack_require__(3),
 			__webpack_require__(2),
-			__webpack_require__(3)
+			__webpack_require__(4)
 		], __WEBPACK_AMD_DEFINE_RESULT__ = function(React, $, ScrollMagic){
 			var HeaderBar = React.createClass({displayName: "HeaderBar",
 				getInitialState: function(){
@@ -143,7 +146,7 @@ webpackJsonp([1],[
 	 * @Details Renders the view for the timeline-widget and operations using the timeline feature and calendar
 	 */
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	        __webpack_require__(4),
+	        __webpack_require__(3),
 	        __webpack_require__(2),
 	    ], __WEBPACK_AMD_DEFINE_RESULT__ = function(React,$){
 	    	var TimelineWidget = React.createClass({displayName: "TimelineWidget",

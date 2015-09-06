@@ -49,11 +49,12 @@ body {
 #homePage {
 	min-width: 100%;
 	min-height: 100%;
+	position: absolute;
 }
 
 .content {
 	white-space: pre-line;
-	position: absolute;
+	/*position: absolute;*/
 	margin-top: 5%;
 }
 
@@ -79,3 +80,46 @@ body {
 #pageThree {
 	height: 90vh;
 }
+
+#pageOne {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+}
+
+
+/* PAGE SECTIONS FOR RESPONSIVENESS */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.column {
+	display: block;
+	float: left;
+	margin: 2% 1% 1% 1%;  /*top right bottom left */
+}
+.contentOne {
+	width: 50%;
+}
+/*.column:first-child { margin-left: 20%; }
+.column:second-child { margin-left: 20%; }*/
+
+/*  GROUPING  */
+.group:before,
+.group:after { content: ""; display: table; }
+.group:after { clear: both;}
+.group { zoom: 1; /* For IE 6/7 */ }
+
+/*  GO FULL WIDTH AT LESS THAN 600 PIXELS */
+
+/* @media only screen and (max-width: 600px) and (max-device-width: 600px){
+	.column { 
+		margin: 1% 0 1% 15%; 
+	}
+}*/
