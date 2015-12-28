@@ -98,7 +98,7 @@
                                     <div class="box-header with-border" data-reactid=".0.1.1.1.0.0.0">
                                         <h3 class="box-title" data-reactid=".0.1.1.1.0.0.0.0">About me</h3>
                                         <div class="box-tools pull-right" data-reactid=".0.1.1.1.0.0.0.1">
-                                            <button class="btn btn-box-tool" data-reactid=".0.1.1.1.0.0.0.1.0"><i class="fa fa-minus" data-reactid=".0.1.1.1.0.0.0.1.0.0"></i></button>
+                                            <button class="btn btn-box-tool" data-reactid=".0.1.1.1.0.0.0.1.0" onclick="toggleCollapse(event)"><i class="fa fa-minus" data-reactid=".0.1.1.1.0.0.0.1.0.0"></i></button>
                                         </div>
                                     </div>
                                     <div class="box-body" data-reactid=".0.1.1.1.0.0.1"><span data-reactid=".0.1.1.1.0.0.1.0">I’m a full stack web developer working with open source web technologies. I’m passionate towards web development and challenges associated with it, and always on the lookout for any exciting projects that I could get my hands on.</span>
@@ -122,7 +122,7 @@
                                     <div class="box-header with-border" data-reactid=".0.1.1.2.0.0.0">
                                         <h3 class="box-title" data-reactid=".0.1.1.2.0.0.0.0">Work Timeline</h3>
                                         <div class="box-tools pull-right" data-reactid=".0.1.1.2.0.0.0.1">
-                                            <button class="btn btn-box-tool" data-reactid=".0.1.1.2.0.0.0.1.0"><i class="fa fa-minus" data-reactid=".0.1.1.2.0.0.0.1.0.0"></i></button>
+                                            <button class="btn btn-box-tool" data-reactid=".0.1.1.2.0.0.0.1.0" onclick="toggleCollapse(event)"><i class="fa fa-minus" data-reactid=".0.1.1.2.0.0.0.1.0.0"></i></button>
                                         </div>
                                     </div>
                                     <div class="box-body" data-reactid=".0.1.1.2.0.0.1"><span data-reactid=".0.1.1.2.0.0.1.0"></span>
@@ -190,17 +190,8 @@
     <!--<script src="public/dist/js/vendors.js"></script>
     <script src="public/dist/js/homePage.bundle.js"></script> -->
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js">
-    </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js">
-    </script>
-    <script type="text/javascript">
-        function scrollToElement(elementClass){
-            $("."+elementClass).velocity("scroll", { 
-                duration: 1000,
-                easing: "easeInBack"
-            });
-        }
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script type="text/javascript" src="public/dist/js/custom-handlers.js"></script>
 
 </html>
