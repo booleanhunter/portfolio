@@ -1,4 +1,9 @@
 function scrollToElement(elementClass){
+    var element = $('.'+elementClass);
+    var box = element[0].children[0].children[0];
+    if(box.className.indexOf('collapsed-box') !== -1){
+        element.find('button')[0].click()
+    }
     $("."+elementClass).velocity("scroll", { 
         duration: 1000,
         easing: "easeInBack"
