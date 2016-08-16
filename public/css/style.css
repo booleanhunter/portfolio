@@ -63,3 +63,7 @@ footer.page-footer {
 html {
   font-family: 'Ubuntu', cursive;
 }
+
+.card.tile {
+  height: 230px;
+}
