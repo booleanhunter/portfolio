@@ -67,3 +67,15 @@ html {
 .card.tile {
   height: 230px;
 }
+
+.translucent {
+  background-color:rgba(40,0,0,0.6);
+  font-weight: bold;
+}
+
+
+.parallax-background {
+    filter: blur(50px);
+  }
+}
+
