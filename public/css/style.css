@@ -5,10 +5,14 @@
  *
  * Made By MaterializeCSS.com
  */
+.nav-wrapper {
+    margin: 0 auto;
+    width: 85% ;
+}
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
 
 p {
@@ -20,62 +24,64 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    /*position: absolute;*/
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.parallax-container.section {
+    width: 100% ;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+@media only screen and(max-width: 992px) {
+    .parallax-container.section {
+        /*position: absolute;*/
+        top: 40% ;
+    }
+    #index-banner.section {
+        top: 10% ;
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    #index-banner.section {
+        top: 0;
+    }
 }
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
-.icon-block .material-icons {
-  font-size: inherit;
+.icon-block.material-icons {
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
 
 .parallax-container {
-  min-height: 630px;
+    min-height: 630px;
 }
 
 html {
-  font-family: 'Ubuntu', cursive;
+    font-family: 'Ubuntu', cursive;
 }
 
 .card.tile {
-  height: 230px;
+    height: 230px;
 }
 
 .translucent {
-  background-color:rgba(40,0,0,0.6);
-  font-weight: bold;
+    background-color: rgba(40, 0, 0, 0.6);
+    font-weight: bold;
 }
 
 
 .parallax-background {
     filter: blur(50px);
-  }
 }
 
+blockquote {
+    border-left: 5px solid #880e4f;
+}
