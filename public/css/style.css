@@ -85,3 +85,10 @@ html {
 blockquote {
     border-left: 5px solid #880e4f;
 }
+
+@media (max-width: 400px) {
+    .nav-wrapper {
+        margin: 0 auto;
+        width: 95% ;
+    }
+}
