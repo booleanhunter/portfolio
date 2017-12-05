@@ -92,3 +92,9 @@ blockquote {
         width: 95% ;
     }
 }
+
+
+.pulse::before {
+    -webkit-animation: pulse-animation 3s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+          animation: pulse-animation 3s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
