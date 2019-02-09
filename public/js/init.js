@@ -1,13 +1,7 @@
-(function($){
-  $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
-Materialize.fadeInImage('#wallpaper')
+document.addEventListener('DOMContentLoaded', function () {
+	var elems = document.querySelectorAll('.parallax');
+	var instances = M.Parallax.init(elems);
+});
 
 /*To animate the timeline */
 
@@ -31,8 +25,6 @@ jQuery(document).ready(function($){
 		}
 	});
 
-	
-
 	function hideBlocks(blocks, offset) {
 		blocks.each(function(){
 
@@ -45,7 +37,6 @@ jQuery(document).ready(function($){
 			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).hasClass('is-hidden') ) && $(this).removeClass('is-hidden').addClass('bounce-in');
 		});
 	}
-
 
 	function displayToast(){
 		if(document.getElementsByClassName("translucent").length < 1){
@@ -67,8 +58,4 @@ jQuery(document).ready(function($){
 	        return D.scrollTop;
 	    }
 	}
-
-
-
 });
-
