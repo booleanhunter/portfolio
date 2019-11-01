@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ashwinhariharan.xyz
+Token: a80c605c8d1257b5cac22d13b8d50b37afebfbe21d11e32d938ba7f55fe80d95
