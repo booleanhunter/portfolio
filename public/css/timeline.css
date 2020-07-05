@@ -69,6 +69,11 @@
   line-height: 40px;
 }
 
+.card-image {
+  margin: 10px;
+  padding-top: 10px;
+}
+
 @media (max-width: 600px) {
   .timeline .timeline-event .timeline-content {
     width: calc(100% - 70px);
